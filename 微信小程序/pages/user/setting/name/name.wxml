@@ -1,0 +1,20 @@
+
+<view class='form'>
+  <view class='form-title'>当前用户名：</view>
+  <view class='form-input'>
+    <view style=" color:gray;"> {{oldname}}</view>
+  </view>
+</view>
+
+<view class='form'>
+  <view class='form-title'>输入新用户名：</view>
+  <view class='form-input'>
+    <input placeholder='请输入' bindinput='newname'></input>
+  </view>
+</view>
+
+
+<view class='submit'>
+<view class='submit-cancel' bindtap='cancel'>取消</view>
+<view class='submit-confirm' bindtap='confirm'>确定</view>
+</view>

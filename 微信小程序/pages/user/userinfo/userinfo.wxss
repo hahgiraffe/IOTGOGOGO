@@ -1,0 +1,98 @@
+/* pages/objecTive/objecTive.wxss */
+page{
+    background-color: #efefef;
+}
+.image2{
+    width: 35rpx;
+    height: 30rpx;
+}
+.objecTive_wrap{
+    margin-bottom: 1px;
+}
+.tip{
+    text-align: center;
+    background-color: orangered;
+    color: #fff;
+    padding: 10rpx;
+}
+.middle{
+    background-color: #fff;
+    margin-top: 40rpx;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    padding: 0 0 0 2%;
+}
+.middle .dingyue{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90rpx;
+    padding-right: 3%;
+    border-bottom: 1px solid #e5e5e5;
+}
+ .middle .dingyue .left{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+ .middle .dingyue .left text{
+    color: red;
+    display: block;
+    width: 14pt;
+}
+.dingyue .right{
+    color: #999999;
+    width: 68%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.right input{
+    text-align: right;
+    float: right;
+}
+.right navigator {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.right picker{
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;  
+}
+
+.right picker .text{
+    display: block;
+    border: 1px solid red;
+    width: 90%;
+}
+ .right .text{
+    width: 90%;
+    max-width: 90%;  
+ 
+    text-align: right;
+    display:block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list_box .bottom{
+    margin-bottom: 60rpx;
+}
+.btn{
+    margin-top: 60rpx;
+    background-color: #fff;
+    color: red;
+}
+.save{
+    height:42px;
+    font-size: 16px; 
+    width: 75%;
+    margin-left: 50px;
+    margin-top: 30px;
+    background-color: #000;
+    color: #fff;
+}

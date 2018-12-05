@@ -1,0 +1,275 @@
+<view class="background">
+  <view class="app-moduler">
+    <navigator url="url" class="mod-item">
+      <view class="mod-signup">
+        <image src="{{signupimg}}"></image>
+      </view>
+      <view class="mod-img" >
+        <image src="{{c}}" class="mod-image" bindtap='showOut'></image>
+      </view>
+      <view class="mod-title">
+         <text>温湿度</text>  
+      </view>
+      <view class="mod-info">
+        <view class="mod-icon">
+          <image src="{{iconsrc}}" class="toCO2"></image>
+        </view>
+      </view>
+    </navigator>
+    
+    <navigator url="url" class="mod-item">
+      <view class="mod-signup">
+        <image src="{{signupimg}}"></image>
+      </view>
+      <view class="mod-img">
+        <image src="{{co2}}" class="modr-image"bindtap='showOut1'></image>
+      </view>
+      <view class="modr-title">
+         <text>二氧化碳</text>  
+      </view>
+      <view class="mod-info">
+        <view class="mod-icon">
+          <image src="{{iconsrc}}" class="icon"></image>
+        </view>
+      </view>
+    </navigator>
+
+    <navigator url="url" class="mod-item">
+      <view class="mod-signup">
+        <image src="{{signupimg}}"></image>
+      </view>
+      <view class="mod-img">
+        <image src="{{hwx}}" class="mod-image" bindtap='showOut2'></image>
+      </view>
+      <view class="mod-title">
+         <text>红外线</text>  
+      </view>
+      <view class="mod-info">
+        <view class="mod-icon">
+          <image src="{{iconsrc}}" class="icon"></image>
+        </view>
+      </view>
+    </navigator>
+
+    <navigator url="url" class="mod-item">  
+      <view class="mod-signup">
+        <image src="{{signupimg}}"></image>
+      </view>
+      <view class="mod-img">
+        <image src="{{light}}" class="modr-image" bindtap='showOut3'></image>
+      </view>
+      <view class="modr-title">
+         <text>光照</text>  
+      </view>
+      <view class="mod-info">
+        <view class="mod-icon">
+          <image src="{{iconsrc}}" class="icon"></image>
+        </view>
+      </view>
+    </navigator>
+
+<navigator url="url" class="mod-item">
+      <view class="mod-signup">
+        <image src="{{signupimg}}"></image>
+      </view>
+      <view class="mod-img">
+        <image src="{{pm25}}" class="mod-image" bindtap='showOut4'></image>
+      </view>
+      <view class="mod-title">
+         <text>PM2.5</text>  
+      </view>
+      <view class="mod-info">
+        <view class="mod-icon">
+          <image src="{{iconsrc}}" class="icon"></image>
+        </view>
+      </view>
+    </navigator>
+
+
+<navigator url="url" class="mod-item">
+      <view class="mod-signup">
+        <image src="{{signupimg}}"></image>
+      </view>
+      <view class="mod-img">
+        <image src="{{ch4}}" class="modr-image" bindtap='showOut5'></image>
+      </view>
+      <view class="modr-title">
+         <text>甲烷</text>  
+      </view>
+      <view class="mod-info">
+        <view class="mod-icon">
+          <image src="{{iconsrc}}" class="icon"></image>
+        </view>
+      </view>
+    </navigator>
+
+<navigator url="url" class="mod-item">
+      <view class="mod-signup">
+        <image src="{{signupimg}}"></image>
+      </view>
+      <view class="mod-img">
+        <image src="{{smog}}" class="mod-image" bindtap='showOut6'></image>
+      </view>
+      <view class="mod-title">
+         <text>烟雾</text>  
+      </view>
+      <view class="mod-info">
+        <view class="mod-icon">
+          <image src="{{iconsrc}}" class="icon"></image>
+        </view>
+      </view>
+    </navigator>
+
+    
+   </view>
+</view>
+
+
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">所有房间温湿度监控</view>
+  <view class="modal-content"> 
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1001病房温度：{{c1}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1002病房温度：{{c2}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1003病房温度：{{c3}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1004诊断室温度：{{c4}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1005药房温度：{{c5}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1006检查室温度：{{c6}}\n</text> 
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1007医生办公室温度：{{c7}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1008诊断室温度：{{c8}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1009病房温度：{{c9}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1010病房温度：{{c10}}\n</text> 
+  </view> 
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+  </view>
+</view>
+
+
+<view class="modal-mask" bindtap="hideModal1" catchtouchmove="preventTouchMove" wx:if="{{showModal1}}"></view>
+<view class="modal-dialog" wx:if="{{showModal1}}">
+  <view class="modal-title">所有房间二氧化碳监控</view>
+  <view class="modal-content"> 
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1001病房二氧化碳：{{co21}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1002病房二氧化碳：{{co22}}\n</text>
+       <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1003病房二氧化碳：{{co23}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1004病房二氧化碳{{co24}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1005药房二氧化碳：{{co25}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1006检查室二氧化碳：{{co26}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1007医生办公室二氧化碳：{{co27}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1008诊断室二氧化碳：{{co28}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1009病房二氧化碳：{{co29}}\n</text>
+       <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1010病房二氧化碳：{{co210}}</text>
+  </view> 
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+  </view>
+</view>
+
+<view class="modal-mask" bindtap="hideModal2" catchtouchmove="preventTouchMove" wx:if="{{showModal2}}"></view>
+<view class="modal-dialog" wx:if="{{showModal2}}">
+  <view class="modal-title">所有房间红外线监控</view>
+  <view class="modal-content"> 
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1001病房红外线强度：{{hwx1}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1002病房红外线强度：{{hwx2}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1003病房红外线强度：{{hwx3}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1004病房红外线强度：{{hwx4}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1005药房红外线强度：{{hwx5}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1006检查室红外线强度：{{hwx6}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1007医生办公室红外线强度：{{hwx7}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1008诊断室红外线强度：{{hwx8}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1009病房红外线强度：{{hwx9}}\n</text>
+       <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1010病房红外线强度：{{hwx10}}</text>
+  </view> 
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+  </view>
+</view>
+
+<view class="modal-mask" bindtap="hideModal3" catchtouchmove="preventTouchMove" wx:if="{{showModal3}}"></view>
+<view class="modal-dialog" wx:if="{{showModal3}}">
+  <view class="modal-title">所有房间光照监控</view>
+  <view class="modal-content"> 
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1001病房光照强度：{{gz1}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1002病房光照强度：{{gz2}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1003病房光照强度：{{gz3}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1004病房光照强度：{{gz4}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1005药房光照强度：{{gz5}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1006检查室光照强度：{{gz6}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1007医生办公室光照强度：{{gz7}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1008诊断室光照强度：{{gz8}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1009病房光照强度：{{gz9}}\n</text>
+       <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1010病房光照强度：{{gz10}}</text>
+  </view> 
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+  </view>
+</view>
+
+<view class="modal-mask" bindtap="hideModal4" catchtouchmove="preventTouchMove" wx:if="{{showModal4}}"></view>
+<view class="modal-dialog" wx:if="{{showModal4}}">
+  <view class="modal-title">所有房间PM2.5监控</view>
+  <view class="modal-content"> 
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1001病房PM2.5强度：{{PM1}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1002病房PM2.5强度：{{PM2}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1003病房PM2.5强度：{{PM3}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1004病房PM2.5强度：{{PM4}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1005药房PM2.5强度：{{PM5}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1006检查室PM2.5强度：{{PM6}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1007医生办公室PM2.5强度：{{PM7}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1008诊断室PM2.5强度：{{PM8}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1009病房PM2.5强度：{{PM9}}\n</text>
+       <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1010病房PM2.5强度：{{PM10}}</text>
+  </view> 
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+  </view>
+</view>
+
+<view class="modal-mask" bindtap="hideModal5" catchtouchmove="preventTouchMove" wx:if="{{showModal5}}"></view>
+<view class="modal-dialog" wx:if="{{showModal5}}">
+  <view class="modal-title">所有房间甲烷浓度监控</view>
+  <view class="modal-content"> 
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1001病房甲烷浓度：{{jw1}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1002病房甲烷浓度：{{jw2}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1003病房甲烷浓度：{{jw3}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1004病房甲烷浓度：{{jw4}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1005药房甲烷浓度：{{jw5}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1006检查室甲烷浓度：{{jw6}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1007医生办公室甲烷浓度：{{jw7}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1008诊断室甲烷浓度：{{jw8}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1009病房甲烷浓度：{{jw9}}\n</text>
+       <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1010病房甲烷浓度：{{jw10}}</text>
+  </view> 
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+  </view>
+</view>
+
+<view class="modal-mask" bindtap="hideModal6" catchtouchmove="preventTouchMove" wx:if="{{showModal6}}"></view>
+<view class="modal-dialog" wx:if="{{showModal6}}">
+  <view class="modal-title">所有房间烟雾监控</view>
+  <view class="modal-content"> 
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1001病房烟雾浓度：{{yw1}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1002病房烟雾浓度：{{yw2}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1003病房烟雾浓度：{{yw3}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1004病房烟雾浓度：{{yw4}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1005药房烟雾浓度：{{yw5}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1006检查室烟雾浓度：{{yw6}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1007医生办公室烟雾浓度：{{yw7}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1008诊断室烟雾浓度：{{yw8}}\n</text>
+      <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1009病房烟雾浓度：{{yw9}}\n</text>
+       <text placeholder-class="input-holder" style='font-size:16px' type="number;"   maxlength="10"  class="input">1010病房烟雾浓度：{{yw10}}</text>
+  </view> 
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+  </view>
+</view>

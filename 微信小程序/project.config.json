@@ -1,0 +1,141 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.0",
+	"appid": "wx44c2c8c06da2cead",
+	"projectname": "%E6%99%BA%E8%83%BD%E7%B3%BB%E7%BB%9F",
+	"svr": "",
+	"client": "",
+	"qcloudRoot": "",
+	"miniprogramRoot": "",
+	"pluginRoot": "",
+	"scripts": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "test",
+					"pathName": "pages/test/test",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "group",
+					"pathName": "pages/group/group",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "groupdetail",
+					"pathName": "pages/group/groupdetail/groupdetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "login",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "entrance",
+					"pathName": "pages/entrance/entrance",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "user",
+					"pathName": "pages/user/user",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "guestdetail",
+					"pathName": "pages/guest/guestdetail/guestdetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "park",
+					"pathName": "pages/park/park",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "guesthistory",
+					"pathName": "pages/guest/guesthistory/guesthistory",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "feedback",
+					"pathName": "pages/user/feedback/feedback",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "setting",
+					"pathName": "pages/user/setting/setting",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "password",
+					"pathName": "pages/user/setting/password/password",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "groupjoin",
+					"pathName": "pages/group/groupjoin/groupjoin",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "apply",
+					"pathName": "pages/group/apply/apply",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "creategroup",
+					"pathName": "pages/group/creategroup/creategroup",
+					"query": ""
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,210 @@
+.section-three {
+  height: 100vh;
+  width: 100%;
+  background-color: #009ad6; 
+  position: absolute;
+  bottom: 0;
+}
+
+ /* 滑块 */
+.switch {
+  margin-left: 20px;
+  margin-top: 15px;
+  border: solid 1px #ffffff;
+  width: 250rpx;
+  height: 70rpx;
+  border-radius: 2em;
+  background-color: #3e4145;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  left: 0; right: 0;
+  top: 50rpx;
+}
+.switch1 {
+  margin-left: 20px;
+  margin-top: 15px;
+  border: solid 1px #ffffff;
+  width: 250rpx;
+  height: 70rpx;
+  border-radius: 2em;
+  background-color: #3e4145;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  left: 0; right: 0;
+  top: 50rpx;
+}
+.switch2 {
+  margin-left: 31px;
+    margin-top: 15px;
+  border: solid 1px #ffffff;
+  width: 250rpx;
+  height: 70rpx;
+  border-radius: 2em;
+  background-color: #3e4145;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  left: 0; right: 0;
+  top: 50rpx;
+}
+.switch3 {
+  margin-left: 33px;
+  margin-top:15px;
+  border: solid 1px #ffffff;
+  width: 250rpx;
+  height: 70rpx;
+  border-radius: 2em;
+  background-color: #3e4145;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  left: 0; right: 0;
+  top: 50rpx;
+}
+
+.switch4 {
+  margin-left: 32.5px;
+  margin-top: 15px;
+  border: solid 1px #ffffff; 
+  width: 250rpx;
+  height: 70rpx;
+  border-radius: 2em;
+  background-color: #3e4145;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  left: 0; right: 0;
+  top: 50rpx;
+}
+.switch5 {
+  margin-left:32.5px;
+  margin-top: 15px;
+  border: solid 1px #ffffff;
+  width: 250rpx;
+  height: 70rpx;
+  border-radius: 2.5em;
+  background-color: #3e4145;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  left: 0; right: 0;
+  top: 50rpx;
+}
+
+.button-circle {
+  height: 70rpx;
+  width: 70rpx;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.button-circle1 {
+  height: 70rpx;
+  width: 70rpx;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.button-circle2 {
+  height: 70rpx;
+  width: 70rpx;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.button-circle3 {
+  height: 70rpx;
+  width: 70rpx;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.button-circle4 {
+  height: 70rpx;
+  width: 70rpx;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.button-circle5 {
+  height: 70rpx;
+  width: 70rpx;
+  border-radius: 50%;
+  background-color: white;
+}
+
+
+ /* 滑块文字 */
+.switch text {
+  margin-top:5px;
+  width: 150rpx;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.switch1 text {
+  margin-top:5px;
+  width: 150rpx;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.switch2 text {
+  margin-top:5px;
+  width: 150rpx;
+  color: white;
+  text-align: center;
+}
+
+.switch3 text {
+  margin-top:5px;
+  width: 150rpx;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.switch4 text {
+  margin-top:5px;
+  width: 150rpx;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.switch5 text {
+  margin-top:5px;
+  width: 150rpx;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.icon{
+  margin-top:35px;
+  display: flex;
+  flex-direction: row;
+  margin-left:55px;
+  font-size: 20px;
+}
+
+.iconname{
+  margin-top:18px;
+  display: flex;
+  flex-direction: row;
+  margin-left:20px;
+  color: white;
+  font-size: 20px;
+}
+
+.picker-content {
+  margin-top:5px;
+  width: 150rpx;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}

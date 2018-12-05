@@ -1,0 +1,28 @@
+
+<view class="container">
+        <!--标题-->
+    <view class="title" >
+        {{chartTitle}}
+    </view>
+    <!--绘制canvas-->
+    <canvas canvas-id="columnCanvas" class="canvas" bindtouchstart="touchHandler"></canvas>
+</view>
+
+
+<view class="container">
+        <!--标题-->
+    <view class="title1" >
+        {{chartTitle1}}
+    </view>
+    <!--绘制canvas-->
+    <canvas canvas-id="columnCanvas1" class="canvas" bindtouchstart="touchHandler"></canvas>
+</view>
+ 
+ <view class="container">
+        <!--标题-->
+    <view class="title2" >
+        {{chartTitle2}}
+    </view>
+    <!--绘制canvas-->
+    <canvas canvas-id="columnCanvas2" class="canvas" bindtouchstart="touchHandler"></canvas>
+</view>

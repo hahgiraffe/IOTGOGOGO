@@ -1,0 +1,38 @@
+<view class='profile'>
+  <view class='avatar'>
+  <image src='{{head_img}}' style='height: 200rpx; width: 200rpx;border-radius: 50%;' mode='scaleToFill'></image>
+  </view>
+  <view class='detail'>
+    <view class='name'>{{nickname}}</view>
+
+ </view>
+</view>
+ 
+<view class='form' bindtap='toUserinfo'>
+ <view class='form-item'>
+    <view class='form-item-image'>
+      <image src='./u_images/userinfo.png' style='height: 60rpx;width: 60rpx;'></image>
+    </view>
+    <view class='form-item-title'>个人资料</view>
+    <view class="navigator-arrow1" style='margin-left: 130rpx;'></view>
+  </view>
+</view>
+<view class='form' bindtap='toSetting'>
+  <view class='form-item'>
+    <view class='form-item-image'>
+      <image src='./u_images/set.png' style='height: 60rpx;width: 60rpx;'></image>
+    </view>
+    <view class='form-item-title'>设置</view>
+    <view class="navigator-arrow2" style='margin-left: 130rpx;'></view>
+  </view>
+</view>
+
+<view class='form' bindtap='toFeedback'>
+  <view class='form-item'>
+    <view class='form-item-image'>
+      <image src='./u_images/feedback.png' style='height: 60rpx;width: 60rpx;'></image>
+    </view>
+    <view class='form-item-title'>意见反馈</view>
+    <view class="navigator-arrow3" style='margin-left: 130rpx;'></view>
+  </view>
+</view>

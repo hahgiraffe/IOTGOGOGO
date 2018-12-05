@@ -1,0 +1,49 @@
+.form {
+  width: 100vw;
+  height: 9vh;
+  border-top: 1rpx solid lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1rpx solid lightgray;
+}
+.form-title {
+  margin-left: 15px;
+  font-size: 30rpx;
+  width: 30vw;
+  text-align: left;
+}
+.form-input {
+  width: 70vw;
+  font-size: 30rpx;
+}
+.submit {
+  width: 100vw;
+  height: 8vh;
+  margin-top: 80rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.submit-cancel {
+  width: 40vw;
+  height: 8vh;
+  background-color: lightgray;
+  border-radius: 5px;
+  line-height: 8vh;
+  text-align: center;
+  color: white;
+}
+
+.submit-confirm {
+  width: 40vw;
+  height: 8vh;
+  background-color: black;
+   border-radius: 5px;
+   line-height: 8vh;
+   text-align: center;
+   color: white;
+}

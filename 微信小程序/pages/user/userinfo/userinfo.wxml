@@ -1,0 +1,60 @@
+<!--pages/objecTive/objecTive.wxml-->
+<view  class="objecTive_wrap">
+    <view wx:if="{{showTip}}" class="tip">{{tip}}</view>
+        <view class="middle bottom">
+            <!--用户姓名-->
+            <view bindtap="data_back" class="dingyue">
+                <view class="left">
+                    <text>*</text>用户姓名：
+                </view>
+                <view class="right" style='font-size:16px;'>
+                        <text >{{name}}</text> 
+                </view>
+            </view>
+        
+             <!--用户账号-->
+            <view bindtap="data_back" class="dingyue">
+                <view class="left">
+                    <text style="font-size:15px;">*</text>用户电话：
+                </view>
+                <view class="right"style='font-size:16px;'>
+                        <text >{{phone}}</text>
+                </view>
+            </view>
+
+                <!--用户邮箱-->
+            <view bindtap="data_back" class="dingyue">
+                <view class="left">
+                    <text style="font-size:15px;">*</text>用户邮箱：
+                </view>
+                <view class="right"style='font-size:16px;'>
+                        <text >{{email}}</text>
+                </view>
+            </view>
+
+<!--用户属性-->
+            <view bindtap="data_back" class="dingyue">
+                <view class="left">
+                   <text>*</text>用户属性：
+                </view>
+                <view class="right"style='font-size:16px;'>
+                        <text >{{identity}}</text>
+                </view>
+            </view>
+
+<!--用户密码-->
+            <view bindtap="data_back" class="dingyue">
+                <view class="left">
+                   <text>*</text>用户房间：
+                </view>
+                   <view class="right"style='font-size:16px;'>
+                        <text >{{room}}</text>
+                </view>
+            </view>
+          </view>
+        
+ 
+   
+ </view>   
+  
+ 

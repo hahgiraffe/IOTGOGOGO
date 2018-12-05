@@ -1,0 +1,54 @@
+{ 
+  "pages": [
+    "pages/index/login/login",
+    "pages/sensor/control/control",
+    "pages/chart/control/control",
+   
+    "pages/index/index/index",
+    "pages/chart/chart",
+    "pages/about/about",
+       
+       
+    "pages/user/feedback/feedback",
+    
+      "pages/user/setting/setting",
+      
+    "pages/user/userinfo/userinfo",
+    
+     
+    "pages/sensor/conwindow/conwindow",
+    
+      
+  "pages/sensorall/sensorall",
+  
+
+     
+  
+    "pages/chart/chart1/chart1",
+    "pages/chart/chart2/chart2", 
+  
+    "pages/index/indexnormal/indexnormal",
+  
+  
+  
+    "pages/sensor/sensor", 
+    "pages/user/user", 
+     
+   
+  
+   
+    "pages/user/setting/email/email",
+    "pages/user/setting/phone/phone", 
+   
+
+    "pages/user/setting/password/password",
+    "pages/user/setting/name/name"
+  ],
+
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "智慧医院系统",
+    "navigationBarTextStyle": "white"
+  }
+}

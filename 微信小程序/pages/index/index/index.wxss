@@ -1,0 +1,120 @@
+page {
+  height: 100%;
+  width: 100%;
+}
+.buttons {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto auto;
+  background-color: #33a3dc;
+}
+.button-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.button-top-left {
+  width: 240rpx;
+  height: 290rpx;
+  background-color: #F3F2F2;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button-top-right {
+  width: 240rpx;
+  height: 290rpx;
+  background-color: #000000;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.button-bottom-left {
+  width: 240rpx;
+  height: 290rpx;
+  background-color: #000000;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button-bottom-right {
+  width: 240rpx;
+  height: 290rpx;
+  background-color: #F2F2F2;
+  border-radius: 15px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button-center{
+  background-color: #33a3dc;
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.button-center-inner {
+  width: 80%;
+  height: 80%;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.index-logo {
+  width: 86rpx;
+  height: 86rpx;
+}
+.font{
+  color: #FFFFFF;
+}
+
+/* 公告 */
+.board {
+  height: 9vh;
+  width: 100%;
+  background-color: #33a3dc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 3px solid darkgray;
+}
+
+.board-title {
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+}
+.board text {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  font-size:14px;
+  margin-bottom: 4.5px;
+}
+.board-content {
+  font-size: 25rpx;
+  flex:1;
+  height: 100%;
+  line-height: 100%;
+}

@@ -1,0 +1,41 @@
+page {
+  height: 100%;
+  width: 120%;
+  background-color: #33a3dc;
+}
+.canvas { 
+    width: 800px;
+    height: 500px;
+    margin-bottom:20px;
+    margin-left:-5px; 
+}
+.title{
+  margin-top:10px;
+  margin-bottom: 10px;
+  margin-left:-70px; 
+  font-size: 18px;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title1{
+  margin-top:-300px;
+  margin-bottom: 10px;
+  margin-left:-70px;
+  font-size: 18px;
+  color:white; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title2{
+  margin-top:-300px;
+  margin-bottom: 10px;
+  margin-left:-70px; 
+  font-size: 18px;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

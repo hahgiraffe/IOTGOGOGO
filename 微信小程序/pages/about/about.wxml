@@ -1,0 +1,91 @@
+<!--Home.wxml-->
+<view class="container">
+  <swiper style="height: {{MaxHeigth}}px;" indicator-dots="{true}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <view class="topView">
+            <!--最上面的图片-->
+            <view class="imageView">
+              <image src="../../../images/yy2.png" class="topImage"></image>
+            </view>
+            
+            <!--下面的view-->
+            <view class="timeView">
+              <view class="titleView">
+                <text class="title">智能医院系统</text>
+              </view>
+
+              <!--时间地点view-->
+              <view class="timeView">
+                <image class="timeImage" src="../../../images/jiaoliu.png"></image>
+                <text class="textText">开发团队：Iot-Go</text>
+              </view>
+              <view class="timeView">
+                <image class="timeImage" src="../../../images/jiaoliu.png"></image>
+                <text class="textText">开发时间：2018-7-15</text>
+              </view> 
+              <view class="desView">
+                <view class="desText">系统介绍</view>
+              </view>
+            </view>  
+              <view class="aboutText">
+              <text>国内智慧医疗已经初步实现了信息管理的智能化、服务管理的智能化。 \n信息管理：临床诊断信息的智能化、电子病例的智能化、住院信息的智能化等。 \n服务管理：服务管理的智能化包括:门诊排号智能化、病房病人呼叫相应智能化、手术安排的智能化等。对于硬件智能化，医院的环境监测与控制这一部分仍处于空缺状态。
+              </text>
+    </view> 
+          
+            <!--下面的点击箭头-->
+            <view class="clickView" bindtap="showDetail">
+              <image class="clickImage" src="../../../images/arrow.png"></image>
+            </view>
+        </view>
+
+        
+      </swiper-item>
+
+        <swiper-item>
+        <view class="topView">
+            <!--最上面的图片-->
+            <view class="imageView">
+              <image src="../../../images/yy1.png" class="topImage"></image>
+            </view>
+            
+            <!--下面的view-->
+            <view class="timeView">
+              <view class="titleView">
+                <text class="title">智能医院系统</text>
+              </view>
+
+              <!--时间地点view-->
+              <view class="timeView">
+                <image class="timeImage" src="../../../images/jiaoliu.png"></image>
+                <text class="textText">开发团队：Iot-Go</text>
+              </view>
+              <view class="timeView">
+                <image class="timeImage" src="../../../images/jiaoliu.png"></image>
+                <text class="textText">开发时间：2018-7-15</text>
+              </view> 
+              <view class="desView">
+                <view class="desText">使用说明</view>
+              </view>
+            </view>  
+              <view class="aboutText1">
+              <text> 
+              导航界面选择要进行的操作 
+              传感器界面查看数据信息 
+              人工控制界面控制制定设备 
+              数据分析界面了解数据实时动态图 
+              用户界面调整用户信息 
+               </text>
+    </view> 
+          
+            <!--下面的点击箭头-->
+            <view class="clickView" bindtap="showDetail">
+              <image class="clickImage" src="../../../images/arrow.png" style="margin-top:35px"></image>
+            </view>
+        </view> 
+        
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

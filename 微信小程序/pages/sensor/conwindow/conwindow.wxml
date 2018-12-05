@@ -1,0 +1,71 @@
+<view class='section-three'>
+<view class='icon' >
+ <image src="../images/bulb.png" style='height:100rpx;width:100rpx;'></image> 
+ <view class='iconname' >
+ <text >色彩灯</text> </view>
+  <view class='switch'>
+    <view class='button-circle' bindtap='buttonCircleInnerHandle' wx:if='{{profile=="关"}}'></view>
+    <text>{{profile}}</text> 
+    <view class='button-circle' bindtap='buttonCircleInnerHandle' wx:if='{{profile=="开"}}'></view>
+  </view>
+  </view>
+
+  <view class='icon' >
+ <image src="../images/bulb.png" style='height:100rpx;width:100rpx; '></image> 
+ <view class='iconname' >
+ <text>亮度灯</text> </view>
+  <view class='switch1'>
+    <view class='button-circle1' bindtap='buttonCircleInnerHandle1' wx:if='{{profile1=="关"}}'></view>
+    <text>{{profile1}}</text> 
+    <view class='button-circle1' bindtap='buttonCircleInnerHandle1' wx:if='{{profile1=="开"}}'></view>
+  </view>
+  </view>
+
+  <view class='icon' >
+ <image src="../images/fan.png" style='height:100rpx;width:100rpx;'></image> 
+ <view class='iconname' >
+ <text style='margin-right:8px;' >风扇  </text> </view>
+  <view class='switch2'>
+    <view class='button-circle2' bindtap='buttonCircleInnerHandle2' wx:if='{{profile2=="关"}}'></view>
+    <text>{{profile2}}</text> 
+    <view class='button-circle2' bindtap='buttonCircleInnerHandle2' wx:if='{{profile2=="开"}}'></view>
+  </view>
+  </view>
+
+  <view class='icon' >
+ <image src="../images/curtain.png" style='height:100rpx;width:100rpx;'></image> 
+ <view class='iconname' >
+ <text style='margin-right:8px;'>窗帘 </text> </view>
+  <view class='switch3'>
+    <view class='button-circle3' bindtap='buttonCircleInnerHandle3' wx:if='{{profile3=="关"}}'></view>
+    <text>{{profile3}}</text> 
+    <view class='button-circle3' bindtap='buttonCircleInnerHandle3' wx:if='{{profile3=="开"}}'></view>
+  </view>
+  </view>
+
+  <view class='icon' >
+ <image src="../images/lock.png" style='height:100rpx;width:100rpx;'></image> 
+ <view class='iconname' >
+ <text style='margin-right:8px;'>门锁 </text> </view>
+  <view class='switch4'>
+    <view class='button-circle4' bindtap='buttonCircleInnerHandle4' wx:if='{{profile4=="关"}}'></view>
+    <text>{{profile4}}</text> 
+    <view class='button-circle4' bindtap='buttonCircleInnerHandle4' wx:if='{{profile4=="开"}}'></view>
+  </view>
+  </view>
+
+  <view class='icon' >
+ <image src="../images/bed.png" style='height:100rpx;width:100rpx;'></image> 
+ <view class='iconname' >
+ <text style='margin-right:8px;'>病床</text> </view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{list}}" >
+  <view class='switch5'>    
+        <view class='picker-content'>{{list[index]}}</view> 
+  </view>  
+  </picker>
+</view>
+</view>
+
+ 
+
+  
